@@ -8,7 +8,7 @@ public class ObjectComparison
     [Test]
     [Description("Проверка текущего царя")]
     [Category("ToRefactor")]
-        public void GetCurrentTsar_ShouldReturnTsarEquivalentToExpected_WhenCalled()
+    public void GetCurrentTsar_ShouldReturnTsarEquivalentToExpected_WhenCalled()
     {
         var actualTsar = TsarRegistry.GetCurrentTsar();
 
@@ -33,7 +33,7 @@ public class ObjectComparison
 
     [Test]
     [Description("Альтернативное решение. Какие у него недостатки?")]
-        public void AreEqual_ShouldReturnTrue_WhenActualTsarMatchesExpected()
+    public void AreEqual_ShouldReturnTrue_WhenActualTsarMatchesExpected()
     {
         var actualTsar = TsarRegistry.GetCurrentTsar();
         var expectedTsar = new Person("Ivan IV The Terrible", 54, 170, 70,
